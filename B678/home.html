@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện trang chủ</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #181818;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .movie-list-container {
+            margin-bottom: 30px;
+        }
+
+        .movie-list {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 15px; /* To accommodate potential scrollbar */
+        }
+
+        .movie-item {
+            flex: 0 0 auto;
+            width: 160px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .movie-item:hover {
+            transform: scale(1.05);
+        }
+
+        .movie-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Footer styles */
+        footer {
+            color: #757575;
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Trending Movies</h2>
+        <div class="movie-list-container">
+            <div class="movie-list">
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/3498db/fff?Text=Space+Cadet" alt="Space Cadet">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/e67e22/fff?Text=The+Bikeriders" alt="The Bikeriders">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/2ecc71/fff?Text=Godzilla+x+Kong" alt="Godzilla x Kong: The New Empire">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/9b59b6/fff?Text=Deadpool+%26+Wolverine" alt="Deadpool & Wolverine">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/f39c12/fff?Text=Civil+War" alt="Civil War">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/1abc9c/fff?Text=Dune:+Part+Two" alt="Dune: Part Two">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/34495e/fff?Text=A+Family+Affair" alt="A Family Affair">
+                </div>
+                </div>
+        </div>
+
+        <h2>Popular Movies</h2>
+        <div class="movie-list-container">
+            <div class="movie-list">
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/f1c40f/fff?Text=Civil+War" alt="Civil War">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/e74c3c/fff?Text=Mr.+%26+Mrs.+Smith" alt="Mr. & Mrs. Smith">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/95a5a6/fff?Text=The+Infallibles" alt="The Infallibles">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/34495e/fff?Text=The+Watchers" alt="The Watchers">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/27ae60/fff?Text=Beverly+Hills+Cop" alt="Beverly Hills Cop: Axel F">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/8e44ad/fff?Text=Inside+Out+2" alt="Inside Out 2">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/d35400/fff?Text=A+Quiet+Place" alt="A Quiet Place: Day One">
+                </div>
+                <div class="movie-item">
+                    <img src="https://via.placeholder.com/160x240/c0392b/fff?Text=The+Garfield+Movie" alt="The Garfield Movie">
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        Bản quyền thuộc CTCP Trường học công nghệ MindX, website: <a href="https://mindx.edu.vn/" style="color: #9e9e9e; text-decoration: none;">https://mindx.edu.vn/</a>
+    </footer>
+</body>
+</html>
