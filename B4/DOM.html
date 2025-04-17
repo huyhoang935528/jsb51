@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM + jsjs</title>
+</head>
+<body>
+    div class='item' id='1'>item1</div>
+    div class='item' id='1'>item2</div>
+
+    <script>
+        // truy cập phần tử trong trang web -------------------
+        // 1. getElementById: lấy phần tử theo id (trả vể 1 phần tử)
+        // 2. getElementsByClassName: trả về danh sách HTMLCollection 
+        // 3. getElementsByTagName: trả về danh sách HTMLCollection
+        const body = document.getElementsByTagName('body')[0];
+        console.log(body); // lấy nội dung của body
+        // --------------------------------
+        // 4. querySelector: lấy phần tử đầu tiên phù hợp với điều kiện
+        const item1 = document.querySelector('.item'); // lấy phần tử đầu tiên có class là item
+        console.log(item1); // lấy nội dung của item1
+        // 5. querySelectorAll: lấy danh sách phần tử NodeList
+        const items = document.querySelectorAll('.item'); // lấy tất cả phần tử có class là item
+        console.log(items); // lấy nội dung của tất cả phần tử có class là item
+        // Thêm phần tử vào trang web ----------------------------
+        // createElement: tạo phần tử mới
+        const newDiv = document.createElement("ul"); // tạo phần tử div mới
+        for (let i = 0; i < 3; i++) {
+        const listItem = document.createElement("li"); // tạo phần tử li mới
+        listItem.innerText = `item ${i}`; // thêm nội dung cho phần tử li
+        newDiv.appendChild(listItem); // thêm phần tử li vào phần tử div
+        }
+        document.getElementById('1').appendChild(newDiv);
+        
+        // Thay đổi phần tử ----------------------------
+        // innerText/ textContent: thay đổi nội dung của phần tử
+        const item2 = document.getElementById("2"); // lấy phần tử có id là 2
+        item2.innerText = `<h1>New code HTML</h1>`; // thay đổi nội dung của item2
+        // innerHTML: thay đổi mã HTML cho phần tử
+        item2.innerHTML = `<h1>New code HTML</h1>`; // thay đổi nội dung của item2
+
+        // Thay đổi thuộc tính
+        item2.style = "display: none"; // thay đổi thuộc tính style của item2
+
+
+
+    </script>
+</body>
+</html>

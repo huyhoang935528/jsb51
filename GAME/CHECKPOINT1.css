@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    background-size: cover;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+  

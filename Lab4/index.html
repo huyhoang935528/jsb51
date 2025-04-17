@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+      }
+      .card {
+        width: 100px;
+        height: 100px;
+        background: pink;
+        cursor: pointer;
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .hide {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://images.vexels.com/media/users/3/294733/isolated/preview/aa404ba71462d76bbdcad5a20ac983fb-self-esteem-plant-cute-icon.png"
+          alt=""
+        />
+      </div>
+      <div class="card">2</div>
+      <div class="card">
+        <img
+          src="https://images.vexels.com/media/users/3/294733/isolated/preview/aa404ba71462d76bbdcad5a20ac983fb-self-esteem-plant-cute-icon.png"
+          alt=""
+        />
+      </div>
+      <div class="card">2</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
