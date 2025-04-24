@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Cinema</title>
+    <link
+      rel="shortcut icon"
+      href="https://images.vexels.com/media/users/3/294733/1"
+      type="image/x-icon"
+    />
+    <style>
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fefefe;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Cinema</title>
-  <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/294733/1" type="image/x-icon" />
-  <style>
-    .container {
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #fefefe;
-    }
-  </style>
-</head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="title">Register</div>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <div class="link">
+          <a href="./html/signin.html">Already have an account?</a>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
 
-<body>
-  <div class="container">
-    <form>
-      <div class="title">Register</div>
-      <input type="text" placeholder="Username" required />
-      <input type="email" placeholder="Email" required />
-      <input type="password" placeholder="Password" required />
-      <div class="link">
-        <a href="./html/signin.html">Already have an account?</a>
+    <div class="container right-panel-active">
+      <!-- Sign Up -->
+      <div class="container__form container--signup">
+        <form action="#" class="form" id="form1">
+          <h2 class="form__title">Sign Up</h2>
+          <input
+            id="signup_username"
+            type="text"
+            placeholder="User"
+            class="input"
+          />
+          <input
+            id="signup_email"
+            type="email"
+            placeholder="Email"
+            class="input"
+          />
+          <input
+            id="signup_password"
+            type="password"
+            placeholder="Password"
+            class="input"
+          />
+          <button id="signup_btn" class="btn">Sign Up</button>
+        </form>
       </div>
-      <button type="submit">Register</button>
-    </form>
-  </div>
-</body>
 
+      <!-- Sign In -->
+      <div class="container__form container--signin">
+        <form action="#" class="form" id="form2">
+          <h2 class="form__title">Sign In</h2>
+          <input
+            id="signin_email"
+            type="email"
+            placeholder="Email"
+            class="input"
+          />
+          <input
+            id="signin_password"
+            type="password"
+            placeholder="Password"
+            class="input"
+          />
+          <a href="#" class="link">Forgot your password?</a>
+          <button id="signin_btn" class="btn">Sign In</button>
+        </form>
+      </div>
+
+      <!-- Overlay -->
+      <div class="container__overlay">
+        <div class="overlay">
+          <div class="overlay__panel overlay--left">
+            <button class="btn" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay__panel overlay--right">
+            <button class="btn" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
